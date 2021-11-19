@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    &__list {
+        margin-left: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+        &__li {
+            list-style: none;
+            margin-right: 20px;
+            font-family: fonts.$main-font;
+        }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .nav__list {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
